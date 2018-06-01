@@ -64,25 +64,32 @@ object SearchTree {
     case -1 => insert(value, tree.getLeft)
   }
 
-  def __insert(tree: List[Int]): AbstractBinTree =
-    insert(tree.head, __insert(tree.tail))
-  
+  def __insert(tree: List[Int]): AbstractBinTree = tree match{
+    case x :: xs  => insert(tree.head, __insert(tree.tail))
+    case x :: Nil => insert(tree.head, EmptyTree)
+  }
+
   //TODO: write function, which deletes a value from tree and rebalance if neccessary
-  def delete(value: Int, tree: AbstractBinTree): List[Any] = tree match{
-    case tree if(tree.getData==value) => delete(value, tree.getLeft) :: delete(value, tree.getRight)
-    case tree if(tree.getLeft!=EmptyTree && tree.getRight!=EmptyTree) => tree.getData :: delete(value, tree.getLeft) :: delete(value, tree.getRight)
-    case tree if(tree.getLeft!=EmptyTree) => tree.getData :: delete(value, tree.getLeft)
-    case tree if(tree.getRight!=EmptyTree) => tree.getData :: delete(value, tree.getRight)
+  def __delete(value: Int, tree: AbstractBinTree): List[Int] = tree match{
+    case tree if(tree.getData==value && tree.getLeft!=EmptyTree && tree.getRight!=EmptyTree) => __delete(value, tree.getLeft) ::: __delete(value, tree.getRight)
+    case tree if(tree.getData==value && tree.getLeft!=EmptyTree) => __delete(value, tree.getLeft)
+    case tree if(tree.getData==value && tree.getRight!=EmptyTree) => __delete(value, tree.getRight)
+    case tree if(tree.getData==value && tree.getLeft==EmptyTree && tree.getRight==EmptyTree) => Nil
+    case tree if(tree.getLeft!=EmptyTree && tree.getRight!=EmptyTree) => tree.getData :: __delete(value, tree.getLeft) ::: __delete(value, tree.getRight)
+    case tree if(tree.getLeft!=EmptyTree) => tree.getData :: __delete(value, tree.getLeft)
+    case tree if(tree.getRight!=EmptyTree) => tree.getData :: __delete(value, tree.getRight)
     case tree if(tree.getLeft==EmptyTree && tree.getRight==EmptyTree) => tree.getData :: Nil
   }
+
+  def delete(value: Int, tree: AbstractBinTree): AbstractBinTree = __insert(__delete(value, tree))
 
   def main(args: Array[String]) {
     //Test your code!
     
     var tree1 = BinTree(10, BinTree(20, BinTree(30, EmptyTree, BinTree(40, EmptyTree, EmptyTree)), BinTree(50, EmptyTree, EmptyTree)), BinTree(60, EmptyTree, EmptyTree));
-    println(tree1)
+    //println(tree1)
+    println(delete(30, tree1))
+
     println(height(tree1))
-
-
   }
 }
