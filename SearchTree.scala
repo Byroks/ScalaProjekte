@@ -64,9 +64,9 @@ object SearchTree {
     case -1 => insert(value, tree.getLeft)
   }
 
-  def __insert(tree: List[Int]): AbstractBinTree = tree match{
-    case x :: xs  => insert(tree.head, __insert(tree.tail))
-    case x :: Nil => insert(tree.head, EmptyTree)
+  def __insert(tree: List[Int], t: AbstractBinTree): AbstractBinTree = tree match{
+    case x :: Nil => insert(tree.head, t)
+    case x :: xs  => insert(tree.head, __insert(tree.tail, t))
   }
 
   //TODO: write function, which deletes a value from tree and rebalance if neccessary
@@ -81,7 +81,7 @@ object SearchTree {
     case tree if(tree.getLeft==EmptyTree && tree.getRight==EmptyTree) => tree.getData :: Nil
   }
 
-  def delete(value: Int, tree: AbstractBinTree): AbstractBinTree = __insert(__delete(value, tree))
+  def delete(value: Int, tree: AbstractBinTree): AbstractBinTree = __insert(__delete(value, tree), EmptyTree)
 
   def main(args: Array[String]) {
     //Test your code!

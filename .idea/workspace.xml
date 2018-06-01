@@ -27,8 +27,8 @@
       <file leaf-file-name="SearchTree.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SearchTree.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+            <state relative-caret-position="-145">
+              <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -240,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527862027785</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Immer noch nicht fertig">
+      <created>1527864690117</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527864690117</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -284,7 +291,8 @@
     <MESSAGE value="Anfang aufgabe 5" />
     <MESSAGE value="aufgabe 5" />
     <MESSAGE value="aufgabe 5 immer noch nicht fertig" />
-    <option name="LAST_COMMIT_MESSAGE" value="aufgabe 5 immer noch nicht fertig" />
+    <MESSAGE value="Immer noch nicht fertig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Immer noch nicht fertig" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -463,8 +471,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SearchTree.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+        <state relative-caret-position="-145">
+          <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
         </state>
       </provider>
     </entry>
