@@ -57,14 +57,14 @@ object SearchTree {
   }
 
   //TODO: implement insertion of value into tree while keeping the tree balanced 
-  def insert(value: Int, tree: AbstractBinTree): AbstractBinTree =
-    if(tree!=EmptyTree){
-      if(tree.getData>value)
-        insert(value, tree.getLeft)
-      else
-        insert(value, tree.getRight)
-    }
-    else BinTree(value, EmptyTree, EmptyTree)
+  def insert(value: Int, tree: AbstractBinTree): AbstractBinTree = balance(tree) match{
+    case 0 if(tree!=EmptyTree) => insert(value, tree.getLeft)
+    case 0 if(tree==EmptyTree) => BinTree(value, EmptyTree, EmptyTree)
+    case 1  wk2
+    trewq
+    => insert(value, tree.getRight)
+    case -1 => insert(value, tree.getLeft)
+  }
   
   //TODO: write function, which deletes a value from tree and rebalance if neccessary
   //def delete(value: Int, tree: AbstractBinTree): AbstractBinTree = ???
@@ -72,7 +72,7 @@ object SearchTree {
   def main(args: Array[String]) {
     //Test your code!
     
-    var tree1 = BinTree(15, BinTree(20, BinTree(30, EmptyTree, BinTree(40, EmptyTree, EmptyTree)), BinTree(50, EmptyTree, EmptyTree)), BinTree(60, EmptyTree, EmptyTree));
+    var tree1 = BinTree(10, BinTree(20, BinTree(30, EmptyTree, BinTree(40, EmptyTree, EmptyTree)), BinTree(50, EmptyTree, EmptyTree)), BinTree(60, EmptyTree, EmptyTree));
     println(tree1)
     println(height(tree1))
 

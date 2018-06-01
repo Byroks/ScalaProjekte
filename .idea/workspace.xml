@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ce5ff33-f406-46f8-9529-beb5efa1aa4b" name="Default" comment="">
+    <list default="true" id="4ce5ff33-f406-46f8-9529-beb5efa1aa4b" name="Default" comment="Anfang aufgabe 5">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchTree.scala" beforeDir="false" afterPath="$PROJECT_DIR$/SearchTree.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScalaProjekte/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="binarytree.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="binarytree.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/binarytree.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="76" column="33" lean-forward="true" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+            <state relative-caret-position="1125">
+              <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchTree.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SearchTree.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -38,6 +49,7 @@
         <option value="$PROJECT_DIR$/tree.scala" />
         <option value="$PROJECT_DIR$/bintree.scala" />
         <option value="$PROJECT_DIR$/binarytree.scala" />
+        <option value="$PROJECT_DIR$/SearchTree.scala" />
       </list>
     </option>
   </component>
@@ -52,9 +64,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -90,9 +102,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.binarytree">
+  <component name="RunManager" selected="Application.SearchTree">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ScalaProjekte" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="SearchTree" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="SearchTree" />
       <module name="ScalaProjekte" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -111,11 +128,6 @@
     </configuration>
     <configuration name="list" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="list" />
-      <module name="ScalaProjekte" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="tree" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="tree" />
       <module name="ScalaProjekte" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -160,17 +172,17 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.list" />
-      <item itemvalue="Application.tree" />
       <item itemvalue="Application.bintree" />
       <item itemvalue="Application.binarytree" />
+      <item itemvalue="Application.SearchTree" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SearchTree" />
         <item itemvalue="Application.binarytree" />
         <item itemvalue="Application.bintree" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.list" />
-        <item itemvalue="Application.tree" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527843724934</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Aufgabe 1c">
+      <created>1527843958325</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527843958325</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Anfang aufgabe 5">
+      <created>1527847018287</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1527847018287</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -214,12 +240,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33819243" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33819243" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989518" visible="true" weight="0.27939042" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989518" visible="true" weight="0.28301886" />
       <window_info id="Structure" order="1" sideWeight="0.5010482" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -240,7 +266,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PGP Übungsaufgabe 1a und b" />
     <MESSAGE value="Aufgabe 1c" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 1c" />
+    <MESSAGE value="Anfang aufgabe 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anfang aufgabe 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -251,6 +278,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/binarytree.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SearchTree.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="3" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/binarytree.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -384,8 +425,15 @@
     <entry file="file://$PROJECT_DIR$/bintree.scala" />
     <entry file="file://$PROJECT_DIR$/binarytree.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="76" column="33" lean-forward="true" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+        <state relative-caret-position="1125">
+          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SearchTree.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
         </state>
       </provider>
     </entry>
