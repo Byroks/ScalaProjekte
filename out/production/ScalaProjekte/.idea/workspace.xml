@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ce5ff33-f406-46f8-9529-beb5efa1aa4b" name="Default" comment="" />
+    <list default="true" id="4ce5ff33-f406-46f8-9529-beb5efa1aa4b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/MitarbeiterIn$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/MitarbeiterIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/ReferatsleiterIn$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/ReferatsleiterIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/ReferentIn$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/ReferentIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/SachbearbeiterIn$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/SachbearbeiterIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/tree$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaProjekte/tree.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,16 +24,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="list2.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/list2.scala">
+      <file leaf-file-name="binarytree.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/binarytree.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="205">
+              <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -31,6 +46,8 @@
         <option value="$PROJECT_DIR$/list.scala" />
         <option value="$PROJECT_DIR$/list2.scala" />
         <option value="$PROJECT_DIR$/tree.scala" />
+        <option value="$PROJECT_DIR$/bintree.scala" />
+        <option value="$PROJECT_DIR$/binarytree.scala" />
       </list>
     </option>
   </component>
@@ -45,9 +62,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -83,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.list">
+  <component name="RunManager" selected="Application.binarytree">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ScalaProjekte" />
@@ -92,13 +109,18 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="list" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="list" />
+    <configuration name="binarytree" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="binarytree" />
       <module name="ScalaProjekte" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="list2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="list2" />
+    <configuration name="bintree" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="bintree" />
+      <module name="ScalaProjekte" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="list" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="list" />
       <module name="ScalaProjekte" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -148,15 +170,17 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.list" />
-      <item itemvalue="Application.list2" />
       <item itemvalue="Application.tree" />
+      <item itemvalue="Application.bintree" />
+      <item itemvalue="Application.binarytree" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.binarytree" />
+        <item itemvalue="Application.bintree" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.list" />
         <item itemvalue="Application.tree" />
-        <item itemvalue="Application.list2" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -171,25 +195,33 @@
       <option name="presentableId" value="Default" />
       <updated>1526719224920</updated>
     </task>
+    <task id="LOCAL-00001" summary="PGP Übungsaufgabe 1a und b">
+      <created>1527762198931</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527762198932</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="22" width="1420" height="783" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3265306" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33819243" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989518" visible="true" weight="0.27213353" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989518" visible="true" weight="0.27576196" />
       <window_info id="Structure" order="1" sideWeight="0.5010482" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -198,7 +230,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3265306" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -207,6 +238,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="PGP Übungsaufgabe 1a und b" />
+    <option name="LAST_COMMIT_MESSAGE" value="PGP Übungsaufgabe 1a und b" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -217,6 +252,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/list2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/list2.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -343,6 +385,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/list2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tree.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -350,10 +399,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list2.scala">
+    <entry file="file://$PROJECT_DIR$/bintree.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="56">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binarytree.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
         </state>
       </provider>
     </entry>
