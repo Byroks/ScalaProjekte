@@ -53,15 +53,15 @@ object SearchTree {
 
   def balance(tree: AbstractBinTree): Int = tree match{
     case EmptyTree => 0
-    case BinTree(_, l, r) => height(l) - height(r)
+    case BinTree(_, l, r) => height(r) - height(l)
   }
 
   //TODO: implement insertion of value into tree while keeping the tree balanced 
   def insert(value: Int, tree: AbstractBinTree): AbstractBinTree = balance(tree) match{
-    case 0 if(tree!=EmptyTree) => insert(value, tree.getLeft)
-    case 0 if(tree==EmptyTree) => BinTree(value, EmptyTree, EmptyTree)
-    case 1 => insert(value, tree.getRight)
-    case -1 => insert(value, tree.getLeft)
+    case 0 if(tree.isEmpty) => BinTree(value, EmptyTree, EmptyTree)
+    case 0                  => BinTree(tree.getData, insert(value, tree.getLeft), tree.getRight)
+    case -1                 => BinTree(tree.getData, tree.getLeft, insert(value, tree.getRight))
+    case 1                  => BinTree(tree.getData, insert(value, tree.getLeft), tree.getRight)
   }
 
   def __insert(tree: List[Int], t: AbstractBinTree): AbstractBinTree = tree match{
@@ -87,7 +87,8 @@ object SearchTree {
     //Test your code!
     
     var tree1 = BinTree(10, BinTree(20, BinTree(30, EmptyTree, BinTree(40, EmptyTree, EmptyTree)), BinTree(50, EmptyTree, EmptyTree)), BinTree(60, EmptyTree, EmptyTree));
-    //println(tree1)
+
+    println(tree1)
     println(delete(30, tree1))
 
     println(height(tree1))
