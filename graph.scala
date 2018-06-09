@@ -18,7 +18,7 @@ object graph {
 		println(graph.edges.flatMap(t => List(t._1, t._2)).distinct)
 
 		//TODO: find all source and sink vertices of the graph
-		println(graph.edges.filter { case (v, x) => v != graph.edges. })
+		//println(graph.edges.filter { case (v, x) => v != graph.edges. })
 
 		//TODO: get maximum outgoing graph degree
 	}
